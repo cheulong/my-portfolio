@@ -1,20 +1,26 @@
 <template>
   <div class="home">
-    <Hero />
-    <Project />
+    <HeroSection />
+    <ProjectSection />
+    <AboutMeSection />
+    <ContactSection />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Hero from '@/components/Hero.vue'
-import Project from '@/components/Project.vue'
+import HeroSection from '@/components/HomePage/HeroSection.vue'
+import ProjectSection from '@/components/HomePage/ProjectSection.vue'
+import AboutMeSection from '@/components/HomePage/AboutMeSection.vue'
+import ContactSection from '@/components/HomePage/ContactSection.vue'
 
 export default {
   name: 'home',
   components: {
-    Hero,
-    Project
+    HeroSection,
+    ProjectSection,
+    AboutMeSection,
+    ContactSection
   }
 }
 </script>
