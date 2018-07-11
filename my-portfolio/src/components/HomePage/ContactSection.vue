@@ -1,7 +1,14 @@
 <template>
   <div class="contact">
-    <h1>Get in Touch</h1>
-    <p>You can find me here</p>
+
+    <div class="">
+      <h1>Get in<br> Touch</h1>
+
+    </div>
+    <div class="">
+<a href="mailto:searcheulong@gmail.com">You can find me here</a>
+    </div>
+
   </div>
 </template>
 
@@ -16,5 +23,35 @@ export default {
 .contact{
   width: 100vw;
   height: 100vh;
-}
+  display: grid;
+  grid-template-rows:50% 50%;
+  align-items: center;
+  margin-left: 5%;
+  }
+  h1{
+  font-size: 6.0rem;
+  line-height: 90%;
+  margin-bottom: 0;
+  }
+  h3{
+  font-size: 1.6rem;
+  }
+  a{
+    font-weight: bold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: gray;
+    padding: 15px 15px;
+    border-radius: 50px;
+    &:hover{
+    background: linear-gradient(90deg, rgb(236, 113, 65), rgb(233, 76, 3));
+  }
+  }
 </style>
