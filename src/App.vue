@@ -18,7 +18,7 @@
         </div>
 
         <div class="logo">
-          <a href="http://localhost:8080/#/">Long.</a>
+          <a href="https://trusting-perlman-6af779.netlify.com/#/">Long.</a>
         </div>
         <div class="social-media">
           <ul class="social-media-icon">
