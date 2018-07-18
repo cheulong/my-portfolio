@@ -3,7 +3,7 @@
     <div class="left">
 
     </div>
-    <div class="content">
+    <div class="content3">
       <div class="title">
         <h1>Projects</h1>
       </div>
@@ -21,7 +21,7 @@
         <router-link to="/portfolio">Show Detail</router-link>
         </div>
         <div class="right">
-
+          <img src="./../../assets/atebug_photo.png" alt="atebug_photo"/>
         </div>
       </div>
     </div>
@@ -126,7 +126,6 @@ export default {
   height: 100vh;
   display: grid;
   grid-template-columns: 10% 90%;
-}
 h1 {
   font-size: 6rem;
   line-height: 90%;
@@ -142,6 +141,9 @@ p {
     font-size: 1.2em;
   }
 }
+}
+
+
 a {
   display: block;
   margin-top: 30px;
@@ -180,14 +182,13 @@ a {
   flex-wrap: nowrap;
   overflow: scroll;
 }
-a {
-}
+
 #main div {
   min-width: 70vw;
   height: 60vh;
   transition: min-width 0.5s, height 0.5s, margin 0.5s;
 }
-.content {
+.content3 {
   height: 100vh;
   display: grid;
   grid-template-rows: 30% 70%;
@@ -202,9 +203,11 @@ a {
     }
   }
   .right{
-    width: 500px;
-    height: 300px;
-    background: white;
+    img{
+    width: 400px;
+    height: auto;
+    }
+    border:none;
     justify-self: center;
   }
 }

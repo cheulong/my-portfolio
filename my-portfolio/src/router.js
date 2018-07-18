@@ -20,12 +20,12 @@ export default new Router({
     },
     {
       path: '/portfolio',
-      name: 'about',
+      name: 'portfolio',
       component: Portfolio
     },
     {
       path: '/resume',
-      name: 'about',
+      name: 'resume',
       component: Resume
     }
   ]

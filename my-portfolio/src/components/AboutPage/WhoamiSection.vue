@@ -8,7 +8,9 @@
   <p>I'm looking for a 8-months internship as front-end developer. I would love to work in Chiang Mai or Bangkok.</p>
   
   </div>
-  <div class="photo"></div>
+  <div class="photo">
+    <img src="./../../assets/profile.png" alt="">
+  </div>
   </div>
 
 </template>
@@ -45,9 +47,10 @@ p{
   line-height: 150%
 }
 .photo{
-  justify-self: center;
-  width: 300px;
+  img{
+width: 300px;
   height: 400px;
-  background: white;
+  }
+  justify-self: center;
 }
 </style>

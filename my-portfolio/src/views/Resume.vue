@@ -1,5 +1,15 @@
 <template>
   <div class="about">
-    <h1>This is an resume page</h1>
+    <ResumeLetter/>
   </div>
 </template>
+
+<script>
+import ResumeLetter from './../components/ResumePage/ResumeLetter';
+export default {
+    name: "Resume",
+    components: {
+      ResumeLetter
+    }
+  };
+</script>
