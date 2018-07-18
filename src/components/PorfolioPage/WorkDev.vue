@@ -28,5 +28,6 @@ export default {
     margin: 100px auto;
     line-height: 1.5em;
   }
+
 }
 </style>

@@ -18,7 +18,7 @@
         </div>
 
         <div class="logo">
-          <a href="https://trusting-perlman-6af779.netlify.com/#/">Long.</a>
+          <router-link to="/"><span>Long.</span></router-link>
         </div>
         <div class="social-media">
           <ul class="social-media-icon">

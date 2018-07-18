@@ -4,6 +4,7 @@
     <WorkOverview/>
     <WorkDesign/>
     <WorkDev/>
+    <WorkShowCase/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import WorkTitle from './../components/PorfolioPage/WorkTitle';
 import WorkDev from './../components/PorfolioPage/WorkDev';
 import WorkDesign from './../components/PorfolioPage/WorkDesign';
 import WorkOverview from './../components/PorfolioPage/WorkOverview';
+import WorkShowCase from './../components/PorfolioPage/WorkShowCase';
 
 export default {
   name: 'portfolio',
@@ -19,7 +21,8 @@ export default {
     WorkTitle,
     WorkDev,
     WorkDesign,
-    WorkOverview
+    WorkOverview,
+    WorkShowCase
     }
 }
 </script>
