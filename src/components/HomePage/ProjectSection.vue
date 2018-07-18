@@ -17,7 +17,7 @@
       </div> -->
       <div class="detail">
         <div class="left">
-        <h3>I hate Bugs.</h3>
+        <h3>Ate Bugs.</h3>
         <router-link to="/portfolio">Show Detail</router-link>
         </div>
         <div class="right">
