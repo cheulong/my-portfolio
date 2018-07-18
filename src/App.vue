@@ -33,7 +33,9 @@
 
 
     <div class="view">
-      <router-view/>
+       <transition name="page" mode="out-in">
+        <router-view/>
+      </transition>
     </div>
 
   </div>
@@ -180,6 +182,7 @@ $main-font: Montserrat, sans-serif;
   width: 100vw;
   height: 100vh;
   display: none;
+  background: #061E3C;
   z-index: 2000;
   ul {
     width: 110vw;
@@ -248,4 +251,10 @@ $main-font: Montserrat, sans-serif;
     }
   }
 }
+.page-enter-active, .page-leave-active {
+    transition: opacity .2s
+  }
+  .page-enter, .page-leave-active {
+    opacity: 0
+  }
 </style>
