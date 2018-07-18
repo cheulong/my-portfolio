@@ -10,6 +10,9 @@ export default {
     name: "Resume",
     components: {
       ResumeLetter
-    }
-  };
+    },
+  created() {
+    document.title = "Cheulong | Resume";
+  }
+};
 </script>

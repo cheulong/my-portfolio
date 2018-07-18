@@ -11,22 +11,26 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: {title: 'Home'}
     },
     {
       path: '/about',
       name: 'about',
-      component: About
+      component: About,
+      meta: {title: 'About'}
     },
     {
       path: '/portfolio',
       name: 'portfolio',
-      component: Portfolio
+      component: Portfolio,
+      meta: {title: 'Portfolio'}
     },
     {
       path: '/resume',
       name: 'resume',
-      component: Resume
+      component: Resume,
+      meta: {title: 'Resume'}
     }
   ]
 })

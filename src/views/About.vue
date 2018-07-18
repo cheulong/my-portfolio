@@ -20,7 +20,10 @@ export default {
     SkillSection,
     WhoamiSection,
     Passion
-  }
+  },
+  created() {
+    document.title = "Cheulong | About";
+  },
 };
 </script>
 

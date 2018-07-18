@@ -23,7 +23,10 @@ export default {
     WorkDesign,
     WorkOverview,
     WorkShowCase
-    }
+    },
+  created() {
+    document.title = "Cheulong | Portfolio";
+  },
 }
 </script>
 

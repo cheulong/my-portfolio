@@ -1,4 +1,4 @@
-<template>
+<template v-title="title">
   <div class="home">
     <full-page :options="options">
       <div class="section">
@@ -49,8 +49,11 @@ export default {
 		    navigationPosition: 'left',
         afterLoad: this.afterLoad,
         onLeave: this.onLeave,
-      },
+      }
     }
+  },
+  created() {
+    document.title = "Cheulong | Home";
   },
   methods: {
         afterLoad() {

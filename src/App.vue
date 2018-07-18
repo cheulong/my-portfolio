@@ -61,7 +61,7 @@ export default {
   name: "home",
   data() {
     return {
-      isMenu: false
+      isMenu: false,
     };
   },
   methods: {
