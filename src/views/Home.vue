@@ -1,24 +1,29 @@
 <template v-title="title">
   <div class="home">
-
+    <full-page :options="options">
+      <div class="section">
         <HeroSection />
+      </div>
+      <div class="section">
+        <ProjectSection />
+      </div>
+      <div class="section">
+        <ResumeSection />
+      </div>
+      <div class="section">
+        <AboutMeSection />
+      </div>
+      <div class="section">
+        <ContactSection />
+      </div>
+  </full-page>
 
-        <ProjectSection class="section" id="project"/>
-
-
-        <ResumeSection class="section" id="resume"/>
-
-
-        <AboutMeSection class="section" id="about"/>
-    
-
-        <ContactSection class="section" id="contact"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-// import FullPage from 'vue-fullpage.js'
+import FullPage from 'vue-fullpage.js'
 import HeroSection from '@/components/HomePage/HeroSection.vue'
 import ProjectSection from '@/components/HomePage/ProjectSection.vue'
 import AboutMeSection from '@/components/HomePage/AboutMeSection.vue'
@@ -32,116 +37,44 @@ export default {
     AboutMeSection,
     ContactSection,
     ResumeSection,
-    // FullPage
+    FullPage
   },
   data () {
     return {
-      // options: {
-      //   controlArrows: true,
-      //   scrollBar: false,
-      //   // anchors: ['', 'work', 'cv', 'about', 'contact'],
-      //   navigation: true,
-		  //   navigationPosition: 'left',
-      //   afterLoad: this.afterLoad,
-      //   onLeave: this.onLeave,
-      // }
+      options: {
+        controlArrows: true,
+        scrollBar: false,
+        // anchors: ['', 'work', 'cv', 'about', 'contact'],
+        navigation: true,
+		    navigationPosition: 'left',
+        afterLoad: this.afterLoad,
+        onLeave: this.onLeave,
+      }
     }
   },
   created() {
     document.title = "Cheulong | Home";
   },
-  mounted() {
-    var controller = new ScrollMagic.Controller();
-
-
-    
-
-
-      // create a scene
-new ScrollMagic.Scene({
-		// duration: 700,	// the scene should last for a scroll distance of 100px
-		// offset: 50		// start this scene after scrolling for 50px
-    triggerElement: "#project",
-    triggerHook: 0.7,
-    reverse: false
-
-  })
-	.setClassToggle("#project","fade-in")
-  .addIndicators({
-    name: "fade scene",
-    indent:200
-  }) // pins the element for the the scene's duration
-	.addTo(controller); 
-
-          // create a scene
-new ScrollMagic.Scene({
-		// duration: 700,	// the scene should last for a scroll distance of 100px
-		// offset: 50		// start this scene after scrolling for 50px
-    triggerElement: "#resume",
-    triggerHook: 0.7,
-    reverse: false
-
-  })
-	.setClassToggle("#resume","fade-in")
-  .addIndicators({
-    name: "fade1 scene",
-    indent:200
-  }) // pins the element for the the scene's duration
-	.addTo(controller); 
-          // create a scene
-new ScrollMagic.Scene({
-		// duration: 700,	// the scene should last for a scroll distance of 100px
-		// offset: 50		// start this scene after scrolling for 50px
-    triggerElement: "#about",
-    triggerHook: 0.7,
-    reverse: false
-  })
-	.setClassToggle("#about","fade-in")
-  .addIndicators({
-    name: "fade1 scene",
-    indent:200
-  }) // pins the element for the the scene's duration
-	.addTo(controller); 
-          // create a scene
-new ScrollMagic.Scene({
-		// duration: 700,	// the scene should last for a scroll distance of 100px
-		// offset: 50		// start this scene after scrolling for 50px
-    triggerElement: "#contact",
-    triggerHook: 0.7,
-    reverse: false
-  })
-	.setClassToggle("#contact","fade-in")
-  .addIndicators({
-    name: "fade1 scene",
-    indent:200
-  }) // pins the element for the the scene's duration
-	.addTo(controller); 
-  },
   methods: {
-        // afterLoad() {
+        afterLoad() {
 
-        //   console.log("Emitted 'after load' event.");
-        // },
-        // onLeave() {
-        //   console.log("Emitted 'on leave' event.");
-        // },
+          console.log("Emitted 'after load' event.");
+        },
+        onLeave() {
+          console.log("Emitted 'on leave' event.");
+        },
       },
-  // destroyed() {
-  //   $.fn.fullpage.destroy('all');
-  //   console.log('hi')
-  // }
+  destroyed() {
+    $.fn.fullpage.destroy('all');
+    console.log('hi')
+  }
 }
 </script>
 <style lang="scss">
 
 .section{
-  opacity: 0;
-  transform:translateX(-100px);
-  transition: all 1s ease-out;
-  &.fade-in{
-    opacity:1;
-    transform:translateX(0px);
-  }
+  width: 100vw;
+  height: 100vh;
 }
 #fp-nav{
   z-index: 100;
