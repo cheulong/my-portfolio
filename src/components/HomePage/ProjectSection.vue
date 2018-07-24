@@ -1,5 +1,5 @@
 <template>
-  <div class="project">
+  <div class="project" id="project1">
     <div class="left">
 
     </div>
@@ -126,6 +126,7 @@ export default {
   height: 100vh;
   display: grid;
   grid-template-columns: 10% 90%;
+  
 h1 {
   font-size: 6rem;
   line-height: 90%;
