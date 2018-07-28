@@ -257,4 +257,36 @@ $main-font: Montserrat, sans-serif;
   .page-enter, .page-leave-active {
     opacity: 0
   }
+
+@media only screen and (max-width: 825px){
+    .logo{
+      display: none;
+    }
+  }
+ @media only screen and (max-width: 600px){
+   #nav{
+     ul{
+       li{
+         a{
+           span{
+             font-size: 3rem;
+           }
+         }
+       }
+     }
+   }
+ }
+ @media only screen and (max-width: 485px){
+   #nav{
+     ul{
+       li{
+         a{
+           span{
+             font-size: 2rem;
+           }
+         }
+       }
+     }
+   }
+ }
 </style>

@@ -28,6 +28,24 @@ export default {
     margin: 100px auto;
     line-height: 1.5em;
   }
-
 }
+@media only screen and (max-width: 1125px){
+  .WorkDev {
+  height: 70vh;
+    }
+  }
+@media only screen and (max-width: 645px){
+  .WorkDev {
+  height: 100vh;
+    }
+  }
+@media only screen and (max-width: 475px){
+  .WorkDev {
+      height: 110vh;
+  span{
+    font-size: 1.6em;
+    padding-left: 50px;
+  }
+    }
+  }
 </style>

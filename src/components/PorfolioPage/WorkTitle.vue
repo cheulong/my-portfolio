@@ -1,6 +1,6 @@
 <template>
     <div class="WorkTitle">
-        <img src="./../../assets/bug_logo.svg" alt="bug_logo"/>
+        <img id="bugTitle" src="./../../assets/bug_logo.svg" alt="bug_logo"/>
         <img id="bugHero" src="./../../assets/bughero.png" alt="bughero">
     </div>
 </template>
@@ -27,5 +27,10 @@ export default {
             height:auto;
             opacity:0.5;
         }
+        #bugTitle{
+            width: 60%;
+            height:auto;
+        }
     }
+
 </style>

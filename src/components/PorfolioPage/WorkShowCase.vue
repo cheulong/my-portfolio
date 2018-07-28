@@ -34,4 +34,18 @@ export default {
         }
     }
   }
+  @media only screen and (max-width: 970px){
+       img{
+        margin: 10px auto!important;
+        width:90%!important;
+        height: 100%!important;
+        &:nth-last-child(1){
+            width: 90%;
+            margin: 0 auto;
+            height: auto;
+            margin-bottom: 50px;
+        }
+       }
+  }
+
 </style>

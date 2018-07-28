@@ -53,4 +53,22 @@ width: 300px;
   }
   justify-self: center;
 }
+ @media only screen and (max-width: 975px){
+.who{
+  display: flex;
+  flex-direction: column;
+  height: 160vh;
+  .photo{
+   width: 300px!important;
+  height: 400px;
+    margin: 0 auto;
+  img{
+width: 300px!important;
+  height: 400px;
+
+}
+  }
+
+}
+}
 </style>

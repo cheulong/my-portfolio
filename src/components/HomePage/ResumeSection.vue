@@ -52,4 +52,27 @@ a {
 .title {
   transform: translateY(-50px);
 }
+@media only screen and (max-width: 815px){
+  .resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+  }
+  a{
+    margin-left: 0;
+  }
+  }
+    @media only screen and (max-width: 615px){
+      .resume{
+        margin-top: 100px;
+      }
+    h1 {
+
+  font-size: 4rem!important;
+}
+h3{
+  font-size: 2.5rem!important;
+}
+    }
 </style>

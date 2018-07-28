@@ -58,5 +58,25 @@ h3{
   font-family: $sub-font;
   font-size: 1.6rem;
 }
+ @media only screen and (max-width: 680px){
+    h1{
 
+  font-size: 4.0rem;
+
+}
+h3{
+  font-size: 1.4rem;
+}
+}
+@media only screen and (max-width: 500px){
+    h1{
+
+  font-size: 3.0rem;
+
+}
+p{
+  margin: 10px 30px;
+  font-size: 0.9rem;
+}
+  }
 </style>

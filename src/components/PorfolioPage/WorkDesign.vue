@@ -85,7 +85,7 @@ export default {
       font-size: 0.8em;
     }
   }
-}
+
 .content {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -100,4 +100,42 @@ export default {
     }
   }
 }
+}
+ @media only screen and (max-width: 1280px){
+  .WorkDesign {
+    .content{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      #design{
+        margin: 50px auto;
+        width:445px;
+      }
+    }
+  }
+}
+ @media only screen and (max-width: 555px){
+    .WorkDesign {
+      margin-top: 50px;
+    }
+   #design{
+     width: 90vw!important;
+     margin: 50px auto;
+   }
+   img{
+     width: 100%!important;
+     height: auto;
+   }
+}
+@media only screen and (max-width: 475px){
+  .WorkDesign{
+span{
+    font-size: 1.6em;
+    padding-left: 50px;
+  }
+  }
+}
+
 </style>

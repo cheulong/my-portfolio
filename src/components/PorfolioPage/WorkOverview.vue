@@ -25,7 +25,7 @@ export default {
         }
         height: 70vh;
         p{
-            
+            margin: 0 20px;
             letter-spacing: 1px;
             span{
                 font-weight: normal;
@@ -35,13 +35,16 @@ export default {
             display: flex;
             height: 120px;
             background: #030e1c;
+            flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
+            text-align: center;
         }
         .presentation{
             width: 50%;
             margin:0 auto;
             margin-top: 70px;
+            text-align: center;
             P{
                 
             &::before{
@@ -50,5 +53,15 @@ export default {
             }
             }
         }
+    }
+    @media only screen and (max-width: 735px){
+    .WorkOverview{
+        height: 100vh;
+    }
+    }
+        @media only screen and (max-width: 430px){
+    .WorkOverview{
+        height: 110vh;
+    }
     }
 </style>

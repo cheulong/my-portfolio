@@ -211,5 +211,69 @@ a {
     justify-self: center;
   }
 }
+@media only screen and (max-width: 915px){
+   .project {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .detail{
+  display: flex;
+  flex-direction: row;
+  .left {
+    h3 {
+      font-size: 2.5em;
+      margin: 80px 50px;
+    }
+  }
+  .right{
+    img{
+    width: 300px;
+    height: auto;
+    }
+    border:none;
+    justify-self: center;
+  }
+}
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  line-height: 90%;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 4rem;
+}
+p {
+  span {
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+}
+}
+  }
+  @media only screen and (max-width: 615px){
+  .detail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .left{
+      margin: 50px auto;
+    h3{
+      margin: 0 50px!important;
+    }
+    }
+    
+  }
 
+    h1 {
+
+  font-size: 4rem!important;
+}
+h3{
+  font-size: 2.5rem!important;
+}
+    }
 </style>

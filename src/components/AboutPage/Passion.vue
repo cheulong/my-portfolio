@@ -43,5 +43,13 @@ h4{
 p{
   line-height: 150%
 }
-
+ @media only screen and (max-width: 975px){
+.passion{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin-right: 50px;
+  height: 110vh;
+}
+}
 </style>
