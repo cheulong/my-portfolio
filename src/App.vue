@@ -66,12 +66,10 @@ export default {
   },
   methods: {
     toggleMenu: function() {
-      console.log(this.isMenu);
       var one = document.getElementsByClassName("one");
       var two = document.getElementsByClassName("two");
       var three = document.getElementsByClassName("three");
       var menu = document.getElementById("nav");
-      console.log(one);
       if (this.isMenu) {
         menu.style.display = "none";
         one[0].classList.remove("trigger");

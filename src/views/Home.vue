@@ -56,17 +56,9 @@ export default {
     document.title = "Cheulong | Home";
   },
   methods: {
-        afterLoad() {
-
-          console.log("Emitted 'after load' event.");
-        },
-        onLeave() {
-          console.log("Emitted 'on leave' event.");
-        },
       },
   destroyed() {
     $.fn.fullpage.destroy('all');
-    console.log('hi')
   }
 }
 </script>
