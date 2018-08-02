@@ -13,19 +13,6 @@
 <script>
 export default {
   name: 'HeroSection',
-  created: function () {
-
-    },
-    mounted:function(){
-    this.good();
-   },
-    methods:{
-    good: function(){
-      let a=document.getElementsByClassName('box')
-      console.log(a[0]);
-a[0].style.opacity="1";
-    }
-  }
 }
 
 
