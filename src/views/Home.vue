@@ -29,6 +29,8 @@ import ProjectSection from '@/components/HomePage/ProjectSection.vue'
 import AboutMeSection from '@/components/HomePage/AboutMeSection.vue'
 import ContactSection from '@/components/HomePage/ContactSection.vue'
 import ResumeSection from '@/components/HomePage/ResumeSection.vue'
+import ScrollMagic from "scrollmagic";
+
 export default {
   name: 'home',
   components: {
@@ -52,6 +54,41 @@ export default {
   },
   created() {
     document.title = "Cheulong | Home";
+  },
+  mounted() {
+    const controller = new ScrollMagic.Controller();
+
+    const scene = new ScrollMagic.Scene({
+      triggerElement: ".project",
+      triggerHook: 0.5
+
+    })
+      .setClassToggle('.project','fade-in')
+      .addTo(controller);
+
+       const scene1 = new ScrollMagic.Scene({
+      triggerElement: ".about",
+      triggerHook: 0.5
+
+    })
+      .setClassToggle('.about','fade-in')
+      .addTo(controller);
+
+       const scene2 = new ScrollMagic.Scene({
+      triggerElement: ".contact",
+      triggerHook: 0.5
+
+    })
+      .setClassToggle('.contact','fade-in')
+      .addTo(controller);
+
+       const scene3 = new ScrollMagic.Scene({
+      triggerElement: ".resume",
+      triggerHook: 0.5
+
+    })
+      .setClassToggle('.resume','fade-in')
+      .addTo(controller);
   },
   methods: {
  

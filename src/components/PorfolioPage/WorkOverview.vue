@@ -53,6 +53,13 @@ export default {
             }
             }
         }
+         opacity: 0;
+  transition: 1s all ease-out;
+
+   &.fade-in{
+     opacity: 1;
+
+}
     }
     @media only screen and (max-width: 735px){
     .WorkOverview{

@@ -24,6 +24,13 @@ export default {
   grid-template-rows: 50% 50%;
   align-items: center;
   margin-left: 5%;
+  opacity: 0;
+  transition: 1s all ease;
+  transform: translateX(-50px);
+   &.fade-in{
+     opacity: 1;
+    transform: translateX(0px);
+}
 }
 h1 {
   font-size: 6rem;

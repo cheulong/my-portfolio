@@ -141,6 +141,13 @@ p {
     font-size: 1.2em;
   }
 }
+opacity: 0;
+  transition: 1s all ease;
+  transform: translateX(-50px);
+   &.fade-in{
+     opacity: 1;
+    transform: translateX(0px);
+}
 }
 
 

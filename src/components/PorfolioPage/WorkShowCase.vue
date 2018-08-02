@@ -33,6 +33,12 @@ export default {
             margin-bottom: 50px;
         }
     }
+     transition: 1s all ease-out;
+  opacity: 0;
+   &.fade-in{
+
+   opacity: 1;
+}
   }
   @media only screen and (max-width: 970px){
        img{

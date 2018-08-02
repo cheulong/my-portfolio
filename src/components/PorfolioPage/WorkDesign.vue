@@ -100,6 +100,13 @@ export default {
     }
   }
 }
+
+  transition: 1s all ease-out;
+  transform: translateX(-300px);
+   &.fade-in{
+
+    transform: translateX(0px);
+}
 }
  @media only screen and (max-width: 1280px){
   .WorkDesign {

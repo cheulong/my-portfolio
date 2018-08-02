@@ -31,6 +31,7 @@ p{
  @media only screen and (max-width: 585px){
    .about1{
      text-align: center;
+ 
    }
 h1{
   font-size: 4.0rem!important;
@@ -38,5 +39,6 @@ h1{
 p{
   font-size: 1.5em;
 }
+
 }
 </style>

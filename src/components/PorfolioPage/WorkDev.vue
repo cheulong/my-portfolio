@@ -28,6 +28,12 @@ export default {
     margin: 100px auto;
     line-height: 1.5em;
   }
+    transition: 1s all ease-out;
+  transform: translateX(-300px);
+   &.fade-in{
+
+    transform: translateX(0px);
+}
 }
 @media only screen and (max-width: 1125px){
   .WorkDev {

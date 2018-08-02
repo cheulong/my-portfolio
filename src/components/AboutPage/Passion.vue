@@ -26,6 +26,13 @@ export default {
   grid-template-columns: 40% 60%;
    width: auto;
   height: 100vh;
+  opacity: 0;
+  transition: 1s all ease-out;
+  transform: translateX(50px);
+   &.fade-in{
+     opacity: 1;
+    transform: translateX(0px);
+}
 }
 h3{
   font-size: 3.0rem;

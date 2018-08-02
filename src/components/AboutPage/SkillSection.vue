@@ -277,6 +277,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.skill{
+  opacity: 0;
+  transition: 1s all ease-out;
+  transform: translateX(-50px);
+   &.fade-in{
+     opacity: 1;
+    transform: translateX(0px);
+}
+}
 h3 {
   font-size: 3rem;
   line-height: 90%;

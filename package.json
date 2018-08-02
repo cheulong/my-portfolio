@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "fullpage.js": "^2.9.7",
+    "scrollmagic": "^2.0.5",
     "vue": "^2.5.16",
     "vue-awesome": "^2.3.7",
     "vue-fullpage.js": "0.0.1",
