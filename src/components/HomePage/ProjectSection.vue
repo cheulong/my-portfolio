@@ -40,82 +40,82 @@
 <script>
 export default {
   name: "ProjectSection",
-  mounted() {
+  // mounted() {
     // console.log('df')
-    var slider = document.querySelector("#main");
-    var isDown = false;
-    var startX;
-    var scrollLeft;
-    slider.addEventListener("mousedown", e => {
-      isDown = true;
+  //   var slider = document.querySelector("#main");
+  //   var isDown = false;
+  //   var startX;
+  //   var scrollLeft;
+  //   slider.addEventListener("mousedown", e => {
+  //     isDown = true;
 
-      var x = slider.querySelectorAll("div");
-      for (var i = 0; i < x.length; i++) {
-        x[i].style.cursor = "-webkit-grabbing";
-        x[i].style.minWidth = "60vw";
-        x[i].style.height = "50vh";
-        x[i].style.margin = "5vh 5vw";
-      }
+  //     var x = slider.querySelectorAll("div");
+  //     for (var i = 0; i < x.length; i++) {
+  //       x[i].style.cursor = "-webkit-grabbing";
+  //       x[i].style.minWidth = "60vw";
+  //       x[i].style.height = "50vh";
+  //       x[i].style.margin = "5vh 5vw";
+  //     }
 
-      startX = e.pageX - slider.offsetLeft;
-      scrollLeft = slider.scrollLeft;
+  //     startX = e.pageX - slider.offsetLeft;
+  //     scrollLeft = slider.scrollLeft;
 
-      console.log("mousedown");
-    });
-    slider.addEventListener("mouseleave", () => {
-      isDown = false;
-      slider.classList.remove("active");
-    }),
-      slider.addEventListener("mouseup", () => {
-        isDown = false;
+  //     console.log("mousedown");
+  //   });
+  //   slider.addEventListener("mouseleave", () => {
+  //     isDown = false;
+  //     slider.classList.remove("active");
+  //   }),
+  //     slider.addEventListener("mouseup", () => {
+  //       isDown = false;
 
-        slider.classList.remove("active");
-        var f = Math.ceil(slider.scrollLeft / 957);
-        if ((slider.scrollLeft / 957) % 1 == 0) {
-          f = f + 1;
-        }
-        if (f * 957 - slider.scrollLeft % 957 < f * 957 - 957 / 2) {
-          var pos = (f * 957) % slider.scrollLeft;
+  //       slider.classList.remove("active");
+  //       var f = Math.ceil(slider.scrollLeft / 957);
+  //       if ((slider.scrollLeft / 957) % 1 == 0) {
+  //         f = f + 1;
+  //       }
+  //       if (f * 957 - slider.scrollLeft % 957 < f * 957 - 957 / 2) {
+  //         var pos = (f * 957) % slider.scrollLeft;
 
-          var it = setInterval(frame, 0);
-          function frame() {
-            if (pos <= 0) {
-              clearInterval(it);
-            } else {
-              if (f == 5) {
-                slider.scrollLeft = (f - 1) * 957;
-              }
-              slider.scrollLeft = slider.scrollLeft + 3;
-              pos -= 3;
-            }
-          }
-        } else {
-          var it = setInterval(frame, 0);
-          function frame() {
-            if (slider.scrollLeft <= (f - 1) * 957) {
-              clearInterval(it);
-            } else {
-              slider.scrollLeft = slider.scrollLeft - 3;
-            }
-          }
-        }
-        var x = slider.querySelectorAll("div");
-        for (var i = 0; i < x.length; i++) {
-          x[i].style.cursor = "-webkit-grab";
-          x[i].style.minWidth = "70vw";
-          x[i].style.height = "60vh";
-          x[i].style.margin = "0";
-        }
-      }),
-      slider.addEventListener("mousemove", e => {
-        if (!isDown) return;
-        e.preventDefault();
-        var x = e.pageX - slider.offsetLeft;
-        var walk = (x - startX) * 3;
-        slider.scrollLeft = scrollLeft - walk;
-      });
-  }
-};
+  //         var it = setInterval(frame, 0);
+  //         function frame() {
+  //           if (pos <= 0) {
+  //             clearInterval(it);
+  //           } else {
+  //             if (f == 5) {
+  //               slider.scrollLeft = (f - 1) * 957;
+  //             }
+  //             slider.scrollLeft = slider.scrollLeft + 3;
+  //             pos -= 3;
+  //           }
+  //         }
+  //       } else {
+  //         var it = setInterval(frame, 0);
+  //         function frame() {
+  //           if (slider.scrollLeft <= (f - 1) * 957) {
+  //             clearInterval(it);
+  //           } else {
+  //             slider.scrollLeft = slider.scrollLeft - 3;
+  //           }
+  //         }
+  //       }
+  //       var x = slider.querySelectorAll("div");
+  //       for (var i = 0; i < x.length; i++) {
+  //         x[i].style.cursor = "-webkit-grab";
+  //         x[i].style.minWidth = "70vw";
+  //         x[i].style.height = "60vh";
+  //         x[i].style.margin = "0";
+  //       }
+  //     }),
+  //     slider.addEventListener("mousemove", e => {
+  //       if (!isDown) return;
+  //       e.preventDefault();
+  //       var x = e.pageX - slider.offsetLeft;
+  //       var walk = (x - startX) * 3;
+  //       slider.scrollLeft = scrollLeft - walk;
+  //     });
+  // }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
