@@ -427,6 +427,7 @@ p {
   }
   .bedges {
     width: 100vw !important;
+    margin-left: -25px!important;
     .bedge {
       a {
         img {
@@ -436,18 +437,20 @@ p {
       }
     }
   }
+  .certificate{
+    margin-left:-25px!important;
+  }
 }
 
 @media only screen and (max-width: 520px) {
   .list {
-    width: 90vw !important;
+  width: 90vw !important;
+  .skill-set__name {
+    width: 250px!important;
   }
-
-  h4 {
-    font-size: 0.9em;
-  }
-  p {
-    font-size: 1em;
+  .skill-set__bar {
+    width: 200px!important;
+    }
   }
 }
 </style>
