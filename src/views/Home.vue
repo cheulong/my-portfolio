@@ -23,12 +23,12 @@
 
 <script>
 // @ is an alias to /src
-import FullPage from 'vue-fullpage.js'
-import HeroSection from '@/components/HomePage/HeroSection.vue'
-import ProjectSection from '@/components/HomePage/ProjectSection.vue'
-import AboutMeSection from '@/components/HomePage/AboutMeSection.vue'
-import ContactSection from '@/components/HomePage/ContactSection.vue'
-import ResumeSection from '@/components/HomePage/ResumeSection.vue'
+import FullPage from "vue-fullpage.js";
+import HeroSection from "@/components/HomePage/HeroSection.vue";
+import ProjectSection from "@/components/HomePage/ProjectSection.vue";
+import AboutMeSection from "@/components/HomePage/AboutMeSection.vue";
+import ContactSection from "@/components/HomePage/ContactSection.vue";
+import ResumeSection from "@/components/HomePage/ResumeSection.vue";
 import ScrollMagic from "scrollmagic";
 
 export default {
@@ -48,110 +48,102 @@ export default {
         scrollBar: false,
         // anchors: ['', 'work', 'cv', 'about', 'contact'],
         navigation: true,
-		    navigationPosition: 'left',
+        navigationPosition: 'left'
       }
     }
   },
-  created() {
-    document.title = "Cheulong | Home";
+  created () {
+    document.title = 'Cheulong | Home'
   },
-  mounted() {
-    const controller = new ScrollMagic.Controller();
+  mounted () {
+    const controller = new ScrollMagic.Controller()
 
-    const scene = new ScrollMagic.Scene({
-      triggerElement: ".project",
+    new ScrollMagic.Scene({
+      triggerElement: '.project',
       triggerHook: 0.5
-
     })
-      .setClassToggle('.project','fade-in')
-      .addTo(controller);
+      .setClassToggle('.project', 'fade-in')
+      .addTo(controller)
 
-       const scene1 = new ScrollMagic.Scene({
-      triggerElement: ".about",
+    new ScrollMagic.Scene({
+      triggerElement: '.about',
       triggerHook: 0.5
-
     })
-      .setClassToggle('.about','fade-in')
-      .addTo(controller);
+      .setClassToggle('.about', 'fade-in')
+      .addTo(controller)
 
-       const scene2 = new ScrollMagic.Scene({
-      triggerElement: ".contact",
+    new ScrollMagic.Scene({
+      triggerElement: '.contact',
       triggerHook: 0.5
-
     })
-      .setClassToggle('.contact','fade-in')
-      .addTo(controller);
+      .setClassToggle('.contact', 'fade-in')
+      .addTo(controller)
 
-       const scene3 = new ScrollMagic.Scene({
-      triggerElement: ".resume",
+    new ScrollMagic.Scene({
+      triggerElement: '.resume',
       triggerHook: 0.5
-
     })
-      .setClassToggle('.resume','fade-in')
-      .addTo(controller);
+      .setClassToggle('.resume', 'fade-in')
+      .addTo(controller)
   },
-  methods: {
- 
-
-      },
+  methods: {},
   destroyed() {
-    $.fn.fullpage.destroy('all');
+    $.fn.fullpage.destroy("all");
   }
-}
+};
 </script>
 <style lang="scss">
-
-.section{
+.section {
   width: 100vw;
   height: 100vh;
 }
-#fp-nav{
+#fp-nav {
   z-index: 100;
-  ul{
-    li{
+  ul {
+    li {
       width: 40px;
-      a{
+      a {
         width: 40px;
-        span{
-        background: white!important;
+        span {
+          background: white !important;
         }
-        &:hover{
-          span{
-            background: gray!important;
+        &:hover {
+          span {
+            background: gray !important;
             width: 30px;
             height: 3px;
             margin: -2px 0 0 -2px;
           }
         }
-        &.active{
-          span{
+        &.active {
+          span {
             width: 40px;
             height: 3px;
             margin: -2px 0px 0px 0px;
           }
-          &:hover{
-            span{
-              background: gray!important;
+          &:hover {
+            span {
+              background: gray !important;
               width: 40px;
               height: 3px;
-margin: -2px 0px 0px 0px;
+              margin: -2px 0px 0px 0px;
             }
           }
         }
-        span{
-          border-radius: 0!important;
-    position: absolute;
-    height: 3px;
-    width: 30px;
-    border: 0;
-    background: #333;
-    left: 0;
-    top: 50%;
-    margin: -2px 0 0 -2px;
-    -webkit-transition: all .1s ease-in-out;
-    -moz-transition: all .1s ease-in-out;
-    -o-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
+        span {
+          border-radius: 0 !important;
+          position: absolute;
+          height: 3px;
+          width: 30px;
+          border: 0;
+          background: #333;
+          left: 0;
+          top: 50%;
+          margin: -2px 0 0 -2px;
+          -webkit-transition: all 0.1s ease-in-out;
+          -moz-transition: all 0.1s ease-in-out;
+          -o-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
         }
       }
     }

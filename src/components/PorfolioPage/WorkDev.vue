@@ -1,15 +1,15 @@
 <template>
     <div class="WorkDev">
-       <span>2. Development</span>
-       <div class="content1">
-           <p>Regarding coding, I did not use any library only Html, Css and a little bit javascript for this project. It is my very first web code. I plan to set up to use wordpress as CMS for back-end of this website in the future. Anyway, I didn't make this website responsible yet, sorry mobile user.</p>
-       </div>
+      <span>2. Development</span>
+      <div class="content1">
+        <p>Regarding coding, I did not use any library only Html, Css and a little bit javascript for this project. It is my very first web code. I plan to set up to use wordpress as CMS for back-end of this website in the future. Anyway, I didn't make this website responsible yet, sorry mobile user.</p>
+      </div>
     </div>
 </template>
 
 <script>
 export default {
-  name: "WorkDev"
+  name: 'WorkDev'
 };
 </script>
 
@@ -28,30 +28,29 @@ export default {
     margin: 100px auto;
     line-height: 1.5em;
   }
-    transition: 1s all ease-out;
+  transition: 1s all ease-out;
   transform: translateX(-300px);
-   &.fade-in{
-
+  &.fade-in {
     transform: translateX(0px);
+  }
 }
+@media only screen and (max-width: 1125px) {
+  .WorkDev {
+    height: 70vh;
+  }
 }
-@media only screen and (max-width: 1125px){
+@media only screen and (max-width: 645px) {
   .WorkDev {
-  height: 70vh;
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .WorkDev {
+    height: 110vh;
+    span {
+      font-size: 1.6em;
+      padding-left: 50px;
     }
   }
-@media only screen and (max-width: 645px){
-  .WorkDev {
-  height: 100vh;
-    }
-  }
-@media only screen and (max-width: 475px){
-  .WorkDev {
-      height: 110vh;
-  span{
-    font-size: 1.6em;
-    padding-left: 50px;
-  }
-    }
-  }
+}
 </style>

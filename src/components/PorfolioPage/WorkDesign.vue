@@ -32,23 +32,21 @@
 
 <script>
 export default {
-  name: "WorkDesign"
-};
+  name: 'WorkDesign'
+}
 </script>
 
 <style lang="scss">
-
-
-@import url('https://fonts.googleapis.com/css?family=Kalam|Raleway');
+@import url("https://fonts.googleapis.com/css?family=Kalam|Raleway");
 .WorkDesign {
-    .raleway{
-        p{
-            font-family: 'Raleway', sans-serif;
-        }
+  .raleway {
+    p {
+      font-family: "Raleway", sans-serif;
     }
-    .segoe{
-            font-family: 'Kalam',cursive;
-    }
+  }
+  .segoe {
+    font-family: "Kalam", cursive;
+  }
   span {
     font-size: 2em;
     padding: 25px 0;
@@ -86,63 +84,61 @@ export default {
     }
   }
 
-.content {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  width: 70%;
-  margin: 100px auto;
-  .pic {
+  .content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 70%;
+    margin: 100px auto;
+    .pic {
       justify-self: center;
-        align-self: center;
-    img {
-      width: 400px;
-      transform: rotate(5deg);
+      align-self: center;
+      img {
+        width: 400px;
+        transform: rotate(5deg);
+      }
     }
   }
-}
 
   transition: 1s all ease-out;
   transform: translateX(-300px);
-   &.fade-in{
-
+  &.fade-in {
     transform: translateX(0px);
+  }
 }
-}
- @media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1280px) {
   .WorkDesign {
-    .content{
+    .content {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
       align-content: center;
-      #design{
+      #design {
         margin: 50px auto;
-        width:445px;
+        width: 445px;
       }
     }
   }
 }
- @media only screen and (max-width: 555px){
-    .WorkDesign {
-      margin-top: 50px;
+@media only screen and (max-width: 555px) {
+  .WorkDesign {
+    margin-top: 50px;
+  }
+  #design {
+    width: 90vw !important;
+    margin: 50px auto;
+  }
+  img {
+    width: 100% !important;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .WorkDesign {
+    span {
+      font-size: 1.6em;
+      padding-left: 50px;
     }
-   #design{
-     width: 90vw!important;
-     margin: 50px auto;
-   }
-   img{
-     width: 100%!important;
-     height: auto;
-   }
-}
-@media only screen and (max-width: 475px){
-  .WorkDesign{
-span{
-    font-size: 1.6em;
-    padding-left: 50px;
-  }
   }
 }
-
 </style>

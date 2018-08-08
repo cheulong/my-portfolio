@@ -11,8 +11,8 @@
 
 <script>
 export default {
-  name: "ResumeSection"
-};
+  name: 'ResumeSection'
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -27,10 +27,10 @@ export default {
   opacity: 0;
   transition: 1s all ease;
   transform: translateX(-50px);
-   &.fade-in{
-     opacity: 1;
+  &.fade-in {
+    opacity: 1;
     transform: translateX(0px);
-}
+  }
 }
 h1 {
   font-size: 6rem;
@@ -59,27 +59,27 @@ a {
 .title {
   transform: translateY(-50px);
 }
-@media only screen and (max-width: 815px){
-  .resume{
+@media only screen and (max-width: 815px) {
+  .resume {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 0;
   }
-  a{
+  a {
     margin-left: 0;
   }
+}
+@media only screen and (max-width: 615px) {
+  .resume {
+    margin-top: 100px;
   }
-    @media only screen and (max-width: 615px){
-      .resume{
-        margin-top: 100px;
-      }
-    h1 {
-
-  font-size: 4rem!important;
+  h1 {
+    font-size: 4rem !important;
+  }
+  h3 {
+    font-size: 2.5rem !important;
+  }
 }
-h3{
-  font-size: 2.5rem!important;
-}
-    }
 </style>
+

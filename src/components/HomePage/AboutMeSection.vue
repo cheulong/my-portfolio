@@ -17,36 +17,36 @@
 
 <script>
 export default {
-  name: 'AboutMeSection'
-}
+  name: "AboutMeSection"
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.about{
+.about {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-rows:50% 50%;
-  background: #061E3C;
+  grid-template-rows: 50% 50%;
+  background: #061e3c;
   align-items: center;
   opacity: 0;
   transition: 1s all ease;
   transform: translateX(-50px);
-   &.fade-in{
-     opacity: 1;
+  &.fade-in {
+    opacity: 1;
     transform: translateX(0px);
+  }
 }
-}
-h1{
-  font-size: 6.0rem;
+h1 {
+  font-size: 6rem;
   line-height: 90%;
   margin-bottom: 0;
 }
-p{
+p {
   font-size: 1.3rem;
 }
-a{
+a {
   font-weight: bold;
   font-size: 0.8em;
   text-transform: uppercase;
@@ -59,34 +59,32 @@ a{
   background: gray;
   padding: 15px 15px;
   border-radius: 50px;
-  &:hover{
+  &:hover {
     background: linear-gradient(90deg, rgb(236, 113, 65), rgb(233, 76, 3));
   }
 }
-@media only screen and (max-width: 815px){
-  .about{
+@media only screen and (max-width: 815px) {
+  .about {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     text-align: center;
     padding-left: 0;
-    h1{
+    h1 {
       margin: 50px auto;
     }
-    a{
+    a {
       display: inline;
     }
-    p{
+    p {
       margin: 50px auto;
-      font-size: 1.2rem!important;
+      font-size: 1.2rem !important;
     }
   }
-  }
-    @media only screen and (max-width: 615px){
-    h1 {
-
-  font-size: 4rem!important;
 }
-
-    }
+@media only screen and (max-width: 615px) {
+  h1 {
+    font-size: 4rem !important;
+  }
+}
 </style>

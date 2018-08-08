@@ -277,14 +277,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.skill{
+.skill {
   opacity: 0;
   transition: 1s all ease-out;
   transform: translateX(-50px);
-   &.fade-in{
-     opacity: 1;
+  &.fade-in {
+    opacity: 1;
     transform: translateX(0px);
-}
+  }
 }
 h3 {
   font-size: 3rem;
@@ -371,7 +371,7 @@ p {
       width: 80px;
       margin: 5px;
       a {
-        color:white;
+        color: white;
         text-decoration: none;
         img {
           border-radius: 50px;
@@ -395,62 +395,59 @@ p {
     }
   }
 }
- @media only screen and (max-width: 1150px){
-   .bedge_certificate{
-     width: 675px!important;
-     margin: 0 auto;
-   flex-direction: column;
-   justify-content: center;
-    .bedges{
+@media only screen and (max-width: 1150px) {
+  .bedge_certificate {
+    width: 675px !important;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    .bedges {
       margin-bottom: 50px;
-      
-    }
-   }
- }
- @media only screen and (max-width: 1025px){
-   .list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  .skill-set__icon{
-  height: 50px!important;
-   widows: 50px!important;
-}
-  ul {
-    list-style: none;
-    padding-left: 0;
-    padding-right: 50px;
-    li {
-      padding-bottom: 40px;
-      font-size: 1.2em;
     }
   }
 }
-.bedges{
-  width: 100vw!important;
-  .bedge{
-    a{
-      img{
-        height: 70px!important;
-        width: 70px!important;
+@media only screen and (max-width: 1025px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .skill-set__icon {
+      height: 50px !important;
+      widows: 50px !important;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      padding-right: 50px;
+      li {
+        padding-bottom: 40px;
+        font-size: 1.2em;
       }
     }
-  
-}
-}
+  }
+  .bedges {
+    width: 100vw !important;
+    .bedge {
+      a {
+        img {
+          height: 70px !important;
+          width: 70px !important;
+        }
+      }
+    }
+  }
 }
 
- @media only screen and (max-width: 520px){
-  
-.list {
-  width: 90vw!important;
-}
+@media only screen and (max-width: 520px) {
+  .list {
+    width: 90vw !important;
+  }
 
-h4{
- font-size: 0.9em;
-}
-p{
-font-size: 1em;
-}
+  h4 {
+    font-size: 0.9em;
+  }
+  p {
+    font-size: 1em;
+  }
 }
 </style>

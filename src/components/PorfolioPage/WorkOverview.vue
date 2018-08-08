@@ -13,62 +13,60 @@
 
 <script>
 export default {
-    name: "WorkOverview"
-};
+  name: 'WorkOverview'
+}
 </script>
 
 <style lang="scss">
-    .WorkOverview{
-        P{
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-        height: 70vh;
-        p{
-            margin: 0 20px;
-            letter-spacing: 1px;
-            span{
-                font-weight: normal;
-            }
-        }
-        .brief{
-            display: flex;
-            height: 120px;
-            background: #030e1c;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            text-align: center;
-        }
-        .presentation{
-            width: 50%;
-            margin:0 auto;
-            margin-top: 70px;
-            text-align: center;
-            P{
-                
-            &::before{
-                content: 'Presentation:';
-                margin-bottom: 10px;
-            }
-            }
-        }
-         opacity: 0;
+.WorkOverview {
+  p {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  height: 70vh;
+  p {
+    margin: 0 20px;
+    letter-spacing: 1px;
+    span {
+      font-weight: normal;
+    }
+  }
+  .brief {
+    display: flex;
+    height: 120px;
+    background: #030e1c;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .presentation {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 70px;
+    text-align: center;
+    p {
+      &::before {
+        content: "Presentation:";
+        margin-bottom: 10px;
+      }
+    }
+  }
+  opacity: 0;
   transition: 1s all ease-out;
 
-   &.fade-in{
-     opacity: 1;
-
+  &.fade-in {
+    opacity: 1;
+  }
 }
-    }
-    @media only screen and (max-width: 735px){
-    .WorkOverview{
-        height: 100vh;
-    }
-    }
-        @media only screen and (max-width: 430px){
-    .WorkOverview{
-        height: 110vh;
-    }
-    }
+@media only screen and (max-width: 735px) {
+  .WorkOverview {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .WorkOverview {
+    height: 110vh;
+  }
+}
 </style>

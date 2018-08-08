@@ -12,46 +12,44 @@
 
 <script>
 export default {
-    name: "WorkShowCase"
-};
+  name: 'WorkShowCase'
+}
 </script>
 
 <style lang="scss">
-      .image{
-    width: 70%;
-    display: flex;
-    margin: 10px auto;
-    flex-wrap: wrap;
-    img{
-        margin: 10px;
-        width:47%;
-        height: 350px;
-        &:nth-last-child(1){
-            width: 90%;
-            margin: 0 auto;
-            height: auto;
-            margin-bottom: 50px;
-        }
+.image {
+  width: 70%;
+  display: flex;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  img {
+    margin: 10px;
+    width: 47%;
+    height: 350px;
+    &:nth-last-child(1) {
+      width: 90%;
+      margin: 0 auto;
+      height: auto;
+      margin-bottom: 50px;
     }
-     transition: 1s all ease-out;
+  }
+  transition: 1s all ease-out;
   opacity: 0;
-   &.fade-in{
-
-   opacity: 1;
+  &.fade-in {
+    opacity: 1;
+  }
 }
+@media only screen and (max-width: 970px) {
+  img {
+    margin: 10px auto !important;
+    width: 90% !important;
+    height: 100% !important;
+    &:nth-last-child(1) {
+      width: 90%;
+      margin: 0 auto;
+      height: auto;
+      margin-bottom: 50px;
+    }
   }
-  @media only screen and (max-width: 970px){
-       img{
-        margin: 10px auto!important;
-        width:90%!important;
-        height: 100%!important;
-        &:nth-last-child(1){
-            width: 90%;
-            margin: 0 auto;
-            height: auto;
-            margin-bottom: 50px;
-        }
-       }
-  }
-
+}
 </style>

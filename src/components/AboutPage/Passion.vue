@@ -15,48 +15,47 @@
 
 <script>
 export default {
-  name: 'Passion'
-}
+  name: "Passion"
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.passion{
+.passion {
   display: grid;
   grid-template-columns: 40% 60%;
-   width: auto;
+  width: auto;
   height: 100vh;
   opacity: 0;
   transition: 1s all ease-out;
   transform: translateX(50px);
-   &.fade-in{
-     opacity: 1;
+  &.fade-in {
+    opacity: 1;
     transform: translateX(0px);
+  }
 }
-}
-h3{
-  font-size: 3.0rem;
+h3 {
+  font-size: 3rem;
   line-height: 90%;
   margin: 1.5em 0;
   margin-bottom: 1em;
 }
-h4{
+h4 {
   font-size: 1.5em;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
-
-p{
-  line-height: 150%
+p {
+  line-height: 150%;
 }
- @media only screen and (max-width: 975px){
-.passion{
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  margin-right: 50px;
-  height: 110vh;
-}
+@media only screen and (max-width: 975px) {
+  .passion {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-right: 50px;
+    height: 110vh;
+  }
 }
 </style>

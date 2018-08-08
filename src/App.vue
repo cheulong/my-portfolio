@@ -33,7 +33,7 @@
 
 
     <div class="view">
-       <transition name="page" mode="out-in">
+      <transition name="page" mode="out-in">
         <router-view/>
       </transition>
     </div>
@@ -60,16 +60,14 @@ export default {
   name: "home",
   data() {
     return {
-      isMenu: false,
+      isMenu: false
     };
   },
   created() {
     console.log("==============================================");
     console.log("||        Welcome to new developer!!!       ||");
     console.log("==============================================");
-
-    
-  },  
+  },
   methods: {
     toggleMenu: function() {
       var one = document.getElementsByClassName("one");
@@ -186,7 +184,7 @@ $main-font: Montserrat, sans-serif;
   width: 100vw;
   height: 100vh;
   display: none;
-  background: #061E3C;
+  background: #061e3c;
   z-index: 2000;
   ul {
     width: 110vw;
@@ -216,7 +214,6 @@ $main-font: Montserrat, sans-serif;
       color: rgb(214, 77, 14);
       span {
         text-decoration: underline;
-  
       }
     }
   }
@@ -255,42 +252,45 @@ $main-font: Montserrat, sans-serif;
     }
   }
 }
-.page-enter-active, .page-leave-active {
-    transition: opacity .2s
-  }
-  .page-enter, .page-leave-active {
-    opacity: 0
-  }
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.2s;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
 
-@media only screen and (max-width: 825px){
-    .logo{
-      display: none;
+@media only screen and (max-width: 825px) {
+  .logo {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #nav {
+    ul {
+      li {
+        a {
+          span {
+            font-size: 3rem;
+          }
+        }
+      }
     }
   }
- @media only screen and (max-width: 600px){
-   #nav{
-     ul{
-       li{
-         a{
-           span{
-             font-size: 3rem;
-           }
-         }
-       }
-     }
-   }
- }
- @media only screen and (max-width: 485px){
-   #nav{
-     ul{
-       li{
-         a{
-           span{
-             font-size: 2rem;
-           }
-         }
-       }
-     }
-   }
- }
+}
+@media only screen and (max-width: 485px) {
+  #nav {
+    ul {
+      li {
+        a {
+          padding:0;
+          span {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
 </style>

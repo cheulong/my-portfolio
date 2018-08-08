@@ -5,14 +5,14 @@
 </template>
 
 <script>
-import ResumeLetter from './../components/ResumePage/ResumeLetter';
+import ResumeLetter from "./../components/ResumePage/ResumeLetter";
 export default {
-    name: "Resume",
-    components: {
-      ResumeLetter
-    },
+  name: 'Resume',
+  components: {
+    ResumeLetter
+  },
   created() {
-    document.title = "Cheulong | Resume";
+    document.title = 'Cheulong | Resume'
   }
 };
 </script>
