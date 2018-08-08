@@ -64,6 +64,7 @@ export default {
     };
   },
   created() {
+    console.log("");
     console.log("==============================================");
     console.log("||        Welcome to new developer!!!       ||");
     console.log("==============================================");
