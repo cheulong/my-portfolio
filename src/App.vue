@@ -10,7 +10,7 @@
     </div>
     <div class="top-nav">
         <div class="burger">
-          <a href="#" class="nav" v-on:click="toggleMenu">
+          <a class="nav" v-on:click="toggleMenu">
               <div class="one"></div>
               <div class="two"></div>
               <div class="three"></div>
