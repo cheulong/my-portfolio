@@ -3,9 +3,8 @@
 
     <div class="heroContent">
       <h1>Cheulong<br>Sear</h1>
-      <h3>Frontend Dev</h3>
-      <p>I’m a Software Engineering student at CAMT, CMU</p>
-      <p>Looking for a <strong>internship.</strong></p>
+      <h3>Full Stack Dev</h3>
+      <p>Be positive, learn new things everyday.</p>
     </div>
   </div>
 </template>

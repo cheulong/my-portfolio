@@ -1,24 +1,27 @@
 <template>
-
   <div class="who">
     <div>
-  <h3>Who am I ?</h3>
-  <h4>Cheulong Sear</h4>
-  <p>I'm a 23 years old cambodian student at CAMT, Chiang Mai university. I love building interfaces and code interactive productions.</p>
-  <p>I'm looking for a 8-months internship as front-end developer. I would love to work in Chiang Mai or Bangkok.</p>
-  
+      <h3>Who am I ?</h3>
+      <h4>Cheulong Sear</h4>
+      <p>
+        I'm a 23 years old cambodian student at CAMT, Chiang Mai university. I
+        love building interfaces and code interactive productions.
+      </p>
+      <p>
+        I'm looking for a 8-months internship as front-end developer. I would
+        love to work in Chiang Mai or Bangkok.
+      </p>
+    </div>
+    <div class="photo">
+      <img src="./../../assets/profile1.png" alt="profile" />
+    </div>
   </div>
-  <div class="photo">
-    <img src="./../../assets/profile.png" alt="">
-  </div>
-  </div>
-
 </template>
 
 <script>
 export default {
-  name: "WhoamiSection"
-}
+  name: 'WhoamiSection',
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -55,8 +58,9 @@ p {
 }
 .photo {
   img {
-    width: 300px;
-    height: 400px;
+    width: 270px !important;
+    height: 270px !important;
+    margin-top: 50px;
   }
   justify-self: center;
 }
@@ -66,12 +70,14 @@ p {
     flex-direction: column;
     height: 160vh;
     .photo {
-      width: 300px !important;
-      height: 400px;
+      width: 200px !important;
+      height: 200px !important;
       margin: 0 auto;
+      margin-top: 50px;
       img {
-        width: 300px !important;
-        height: 400px;
+        width: 200px !important;
+        height: 200px !important;
+        margin-top: 50px;
       }
     }
   }

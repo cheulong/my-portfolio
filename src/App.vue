@@ -2,93 +2,119 @@
   <div id="app">
     <div id="nav">
       <ul>
-        <li @click="toggleMenu"><router-link to="/"><span>Home</span></router-link></li>
-        <li @click="toggleMenu"><router-link to="/portfolio"><span>Portfolio</span></router-link></li>
-        <li @click="toggleMenu"><router-link to="/resume"><span>Resume</span></router-link></li>
-        <li @click="toggleMenu"><router-link to="/about"><span>About</span></router-link></li>
+        <li @click="toggleMenu">
+          <router-link to="/"><span>Home</span></router-link>
+        </li>
+        <li @click="toggleMenu">
+          <router-link to="/portfolio"><span>Portfolio</span></router-link>
+        </li>
+        <li @click="toggleMenu">
+          <router-link to="/resume"><span>Resume</span></router-link>
+        </li>
+        <li @click="toggleMenu">
+          <router-link to="/about"><span>About</span></router-link>
+        </li>
       </ul>
     </div>
     <div class="top-nav">
-        <div class="burger">
-          <a class="nav" v-on:click="toggleMenu">
-              <div class="one"></div>
-              <div class="two"></div>
-              <div class="three"></div>
-          </a>
-        </div>
+      <div class="burger">
+        <a class="nav" v-on:click="toggleMenu">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </a>
+      </div>
 
-        <div class="logo">
-          <router-link to="/"><span>Long.</span></router-link>
-        </div>
-        <div class="social-media">
-          <ul class="social-media-icon">
-            <li title="email"><a href="mailto:searcheulong@gmail.com"><icon name="envelope-o" scale="2"></icon></a></li>
-            <li title="linked in"><a href="https://www.linkedin.com/in/sear-cheulong-16370b95/" target="_blank"><icon name="linkedin" scale="2"></icon></a></li>
-            <li title="twitter"><a href="https://twitter.com/searcheulong" target="_blank"><icon name="twitter" scale="2"></icon></a></li>
-            <li title="github"><a href="https://github.com/cheulong" target="_blank"><icon name="github" scale="2"></icon></a></li>
-            <li title="codepen"><a href="https://codepen.io/Cheulong/" target="_blank"><icon name="codepen" scale="2"></icon></a></li>
-          </ul>
-        </div>
+      <div class="logo">
+        <router-link to="/"><span>Long.</span></router-link>
+      </div>
+      <div class="social-media">
+        <ul class="social-media-icon">
+          <li title="email">
+            <a href="mailto:searcheulong@gmail.com"
+              ><icon name="envelope-o" scale="2"></icon
+            ></a>
+          </li>
+          <li title="linked in">
+            <a href="https://www.linkedin.com/in/cheulongsear/" target="_blank"
+              ><icon name="linkedin" scale="2"></icon
+            ></a>
+          </li>
+          <li title="twitter">
+            <a href="https://twitter.com/searcheulong" target="_blank"
+              ><icon name="twitter" scale="2"></icon
+            ></a>
+          </li>
+          <li title="github">
+            <a href="https://github.com/cheulong" target="_blank"
+              ><icon name="github" scale="2"></icon
+            ></a>
+          </li>
+          <li title="codepen">
+            <a href="https://codepen.io/Cheulong/" target="_blank"
+              ><icon name="codepen" scale="2"></icon
+            ></a>
+          </li>
+        </ul>
+      </div>
     </div>
-
 
     <div class="view">
       <transition name="page" mode="out-in">
-        <router-view/>
+        <router-view />
       </transition>
     </div>
-
   </div>
 </template>
 
 <script>
-import Vue from "vue";
+import Vue from 'vue';
 /* Pick one way between the 2 following ways */
 // only import the icons you use to reduce bundle size
-import "vue-awesome/icons/flag";
+import 'vue-awesome/icons/flag';
 // or import all icons if you don't care about bundle size
-import "vue-awesome/icons";
+import 'vue-awesome/icons';
 /* Register component with one of 2 methods */
-import Icon from "vue-awesome/components/Icon";
+import Icon from 'vue-awesome/components/Icon';
 // globally (in your main .js file)
-Vue.component("icon", Icon);
+Vue.component('icon', Icon);
 
 export default {
   components: {
-    Icon
+    Icon,
   },
-  name: "home",
+  name: 'home',
   data() {
     return {
-      isMenu: false
+      isMenu: false,
     };
   },
   created() {
-    console.log("");
-    console.log("==============================================");
-    console.log("||        Welcome to new developer!!!       ||");
-    console.log("==============================================");
+    console.log('');
+    console.log('==============================================');
+    console.log('||        Welcome to new developer!!!       ||');
+    console.log('==============================================');
   },
   methods: {
     toggleMenu: function() {
-      var one = document.getElementsByClassName("one");
-      var two = document.getElementsByClassName("two");
-      var three = document.getElementsByClassName("three");
-      var menu = document.getElementById("nav");
+      var one = document.getElementsByClassName('one');
+      var two = document.getElementsByClassName('two');
+      var three = document.getElementsByClassName('three');
+      var menu = document.getElementById('nav');
       if (this.isMenu) {
-        menu.style.display = "none";
-        one[0].classList.remove("trigger");
-        two[0].classList.remove("trigger");
-        three[0].classList.remove("trigger");
+        menu.style.display = 'none';
+        one[0].classList.remove('trigger');
+        two[0].classList.remove('trigger');
+        three[0].classList.remove('trigger');
       } else {
-        menu.style.display = "inline";
-        one[0].classList.add("trigger");
-        two[0].classList.add("trigger");
-        three[0].classList.add("trigger");
+        menu.style.display = 'inline';
+        one[0].classList.add('trigger');
+        two[0].classList.add('trigger');
+        three[0].classList.add('trigger');
       }
       this.isMenu = !this.isMenu;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -100,8 +126,8 @@ body {
 }
 
 //Font
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 //Variables
 $main-font: Montserrat, sans-serif;
 //Mixin
@@ -285,7 +311,7 @@ $main-font: Montserrat, sans-serif;
     ul {
       li {
         a {
-          padding:0;
+          padding: 0;
           span {
             font-size: 2rem;
           }

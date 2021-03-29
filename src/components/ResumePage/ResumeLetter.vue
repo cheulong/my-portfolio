@@ -1,15 +1,23 @@
 <template>
-    <div class="Resume">
-        <h1>Resume</h1>
-        <div class="letter">
-            <iframe src="https://drive.google.com/file/d/1RpCbTVWBT0X_qVudxwWnBt_qEpY5uEUC/preview" width="100%" height="100%"></iframe>
-        </div>
+  <div class="Resume">
+    <h1>Resume</h1>
+    <div class="letter">
+      <a
+        href="https://drive.google.com/uc?export=download&id=13GuwIUantYn7dxTamr1Svy4NHUiHSrK9"
+        >download my resume</a
+      >
+      <iframe
+        src="https://drive.google.com/file/d/13GuwIUantYn7dxTamr1Svy4NHUiHSrK9/preview"
+        width="100%"
+        height="100%"
+      ></iframe>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "ResumeLetter"
+  name: 'ResumeLetter',
 };
 </script>
 
@@ -26,6 +34,16 @@ export default {
     height: 800px;
     margin: 0 auto;
     margin-bottom: 50px;
+    a {
+      text-transform: capitalize;
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 10px;
+      display: block;
+      &:hover {
+        color: rgb(236, 113, 65);
+      }
+    }
   }
 }
 @media only screen and (max-width: 750px) {
