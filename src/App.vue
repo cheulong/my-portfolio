@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <ul>
         <li @click="toggleMenu">
           <router-link to="/"><span>Home</span></router-link>
@@ -63,6 +63,9 @@
       <transition name="page" mode="out-in">
         <router-view />
       </transition>
+    </div>-->
+    <div class="container">
+      <h1>Under Maintenance</h1>
     </div>
   </div>
 </template>
@@ -137,7 +140,15 @@ $main-font: Montserrat, sans-serif;
 
   width: $width + px !important;
 }
-
+.container {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  h1 {
+    margin: auto;
+  }
+}
 .nav {
   width: 50px;
   display: block;
