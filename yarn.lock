@@ -3887,12 +3887,10 @@ fstream@^1.0.0, fstream@^1.0.12:
     mkdirp ">=0.5 0"
     rimraf "2"
 
-fullpage.js@^2.9.7:
-  version "2.9.7"
-  resolved "https://registry.yarnpkg.com/fullpage.js/-/fullpage.js-2.9.7.tgz#65b838a76a9cc459e6474d36ba54fd18aba52f3d"
-  integrity sha512-r2a7h/xAFRningddSAP/xZtZxG3dxvmAc71ckommFsHF/EAPu5gw1CU4DRc2ErRg10lLX1gBoybISpa5F3ps5A==
-  dependencies:
-    jquery ">=1.6.0"
+fullpage.js@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/fullpage.js/-/fullpage.js-4.0.5.tgz#033880e792610a28fe4f7c9ee49eff33a7b38e14"
+  integrity sha512-4OWRP08ogL35LwnNyDa8LNqRD0003HdolcVflfUyhMwAHVrpBNY9u1WYdAfnFEX7bd4vsermL7z22nmNqPWZvw==
 
 function-bind@^1.1.1:
   version "1.1.1"
@@ -4903,11 +4901,6 @@ javascript-stringify@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/javascript-stringify/-/javascript-stringify-1.6.0.tgz#142d111f3a6e3dae8f4a9afd77d45855b5a9cce3"
   integrity sha1-FC0RHzpuPa6PSpr9d9RYVbWpzOM=
-
-jquery@>=1.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
-  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
 
 js-base64@^2.1.8:
   version "2.6.4"
